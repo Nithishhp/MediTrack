@@ -1,0 +1,36 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="shield" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#E8F0FE"/>
+    </linearGradient>
+    <linearGradient id="cross" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1A73E8"/>
+      <stop offset="100%" stop-color="#1557B0"/>
+    </linearGradient>
+    <linearGradient id="pulse" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#69F0AE"/>
+      <stop offset="100%" stop-color="#00E676"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Shield shape -->
+  <path d="M256 42 L452 112 C452 112 460 264 395 351 C352 407 256 447 256 447 C256 447 160 407 117 351 C52 264 60 112 60 112 Z"
+        fill="url(#shield)"/>
+
+  <!-- Inner shield highlight -->
+  <path d="M256 64 L430 128 C430 128 438 264 380 340 C344 390 256 425 256 425 C256 425 168 390 132 340 C74 264 82 128 82 128 Z"
+        fill="none" stroke="rgba(26,115,232,0.08)" stroke-width="2"/>
+
+  <!-- Medical cross -->
+  <rect x="226" y="120" width="60" height="185" rx="12" fill="url(#cross)"/>
+  <rect x="183" y="168" width="146" height="60" rx="12" fill="url(#cross)"/>
+
+  <!-- Heartbeat pulse line -->
+  <path d="M80 380 L180 380 L200 345 L225 415 L255 320 L280 405 L295 365 L315 380 L432 380"
+        fill="none" stroke="url(#pulse)" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Tracking dot -->
+  <circle cx="432" cy="380" r="16" fill="#69F0AE"/>
+  <circle cx="432" cy="380" r="26" fill="none" stroke="#69F0AE" stroke-width="6" opacity="0.5"/>
+</svg>

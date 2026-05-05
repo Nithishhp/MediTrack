@@ -1,0 +1,47 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A73E8"/>
+      <stop offset="100%" stop-color="#1557B0"/>
+    </linearGradient>
+    <linearGradient id="shield" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#E8F0FE"/>
+    </linearGradient>
+    <linearGradient id="cross" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1A73E8"/>
+      <stop offset="100%" stop-color="#1557B0"/>
+    </linearGradient>
+    <linearGradient id="pulse" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00C853"/>
+      <stop offset="100%" stop-color="#69F0AE"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Rounded square background -->
+  <rect width="1024" height="1024" rx="220" fill="url(#bg)"/>
+
+  <!-- Shield shape - centered and scaled -->
+  <path d="M512 172 L901 336 C901 336 921 694 768 899 C665 1032 512 1114 512 1114 C512 1114 359 1032 256 899 C103 694 123 336 123 336 Z"
+        fill="url(#shield)" transform="translate(0,-40) scale(0.85)" transform-origin="512 512"/>
+
+  <!-- Shield - repositioned for the scaled version -->
+  <path d="M512 186 L838 326 C838 326 854 630 724 804 C638 917 512 987 512 987 C512 987 386 917 300 804 C170 630 186 326 186 326 Z"
+        fill="url(#shield)"/>
+
+  <!-- Inner shield highlight -->
+  <path d="M512 230 L800 354 C800 354 814 620 698 776 C622 878 512 940 512 940 C512 940 402 878 326 776 C210 620 224 354 224 354 Z"
+        fill="none" stroke="rgba(26,115,232,0.08)" stroke-width="4"/>
+
+  <!-- Medical cross -->
+  <rect x="452" y="310" width="120" height="310" rx="24" fill="url(#cross)"/>
+  <rect x="367" y="405" width="290" height="120" rx="24" fill="url(#cross)"/>
+
+  <!-- Heartbeat pulse line -->
+  <path d="M200 750 L370 750 L410 670 L460 830 L520 620 L570 810 L600 720 L640 750 L830 750"
+        fill="none" stroke="url(#pulse)" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Tracking dot -->
+  <circle cx="830" cy="750" r="30" fill="#00C853"/>
+  <circle cx="830" cy="750" r="50" fill="none" stroke="#00C853" stroke-width="10" opacity="0.4"/>
+</svg>
